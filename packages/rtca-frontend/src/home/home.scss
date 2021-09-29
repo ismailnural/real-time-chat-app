@@ -1,0 +1,61 @@
+@import '../globals';
+
+.homePage {
+  width: 500px;
+  height: 500px;
+  padding: 2rem;
+  background-color: #2d343e;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 5px;
+
+  input {
+    height: 50px;
+    width: 80%;
+    background-color: #404450;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background-color: #ffac41;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #e08713;
+    }
+  }
+
+  .predefinedRooms {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: -30px;
+
+    span {
+      background-color: $redColor;
+      padding: 4px 8px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s ease-in-out;
+      font-size: 0.7rem;
+
+      &:hover {
+        background-color: $darkRedColor;
+      }
+    }
+  }
+}

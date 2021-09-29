@@ -1,0 +1,26 @@
+{
+    "name": "real-time-chat-app",
+    "version": "1.0.0",
+    "description": "Real time chat app monorepo",
+    "author": "İsmail NURAL @ismailnural",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "start": "NODE_ENV=production && yarn dev",
+        "dev": "lerna run start",
+        "lerna:clean": "lerna run clean",
+        "lerna:lint": "lerna run lint",
+        "lerna:test": "lerna run test",
+        "lerna:bootstrap": "lerna bootstrap",
+        "lerna:create": "lerna create",
+        "frontend:dev": "cd packages/rtca-frontend && yarn start",
+        "backend:dev": "cd packages/rtca-backend && yarn start"
+    },
+    "devDependencies": {
+        "lerna": "^3.22.1",
+        "prettier": "^2.2.1"
+    }
+}
